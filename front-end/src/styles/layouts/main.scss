@@ -1,0 +1,40 @@
+// Main Layout Styles
+.main-layout {
+  &__header {
+    transition: all 0.3s ease;
+    
+    &:hover {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__nav {
+    a {
+      position: relative;
+      
+      &:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 50%;
+        background-color: currentColor;
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+      }
+      
+      &:hover:after {
+        width: 100%;
+      }
+    }
+  }
+
+  &__main {
+    min-height: calc(100vh - 8rem); // Account for header and footer
+  }
+
+  &__footer {
+    margin-top: auto;
+  }
+} 
