@@ -9,6 +9,7 @@ Hello, I'm Hoa
 1. Terminal 1:
 ```sh 
 cd backend
+npm install
 npm run dev
 ```
 
@@ -16,6 +17,7 @@ npm run dev
 
 ```sh
 cd front-end
-npm run start
+npm install
+npm start
 ```
 ``
