@@ -1,15 +1,13 @@
-import { createBrowserRouter } from 'react-router-dom';
-import MainLayout from '../layouts/MainLayout';
-import ChildLayout from '../layouts/ChildLayout';
-import HomePage from '../pages/HomePage';
-
-// Import your page components here
-const About = () => <div>About Page</div>;
-const Contact = () => <div>Contact Page</div>;
+import MessyReact from "@/pages/MessyReact";
+import { createBrowserRouter } from "react-router-dom";
+import MainLayout from "../layouts/MainLayout";
+import HomePage from "../pages/HomePage";
+import AlgorithmPage from "@/pages/Algorithm";
+import Crud from "@/pages/Crud";
 
 export const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <MainLayout />,
     children: [
       {
@@ -17,21 +15,18 @@ export const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: 'about',
-        element: (
-          <ChildLayout title="About Us" description="Learn more about our company">
-            <About />
-          </ChildLayout>
-        ),
+        index: true,
+        path: "algorithm",
+        element: <AlgorithmPage />,
       },
       {
-        path: 'contact',
-        element: (
-          <ChildLayout title="Contact Us" description="Get in touch with us">
-            <Contact />
-          </ChildLayout>
-        ),
+        path: "messy-react",
+        element: <MessyReact />,
+      },
+      {
+        path: "architecture",
+        element: <Crud />,
       },
     ],
   },
-]); 
+]);

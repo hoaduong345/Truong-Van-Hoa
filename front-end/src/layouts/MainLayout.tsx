@@ -1,5 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
-import ico99Tect from "../assets/icon/ico-99Tech.png";
+import ico99Tect from "../assets/icons/ico-99Tech.png";
 
 const MainLayout = () => {
   return (
@@ -21,23 +21,29 @@ const MainLayout = () => {
               Finance
             </Link>
             <Link
-              to="/about"
-              className="text-white font-semibold hover:text-purple-400 transition-colors"
+              to="/algorithm"
+              className="text-white font-semibold hover:text-purple-400 transition-colors uppercase"
             >
-              ABOUT US
+              Algorithm
             </Link>
             <Link
-              to="/contact"
-              className="text-white font-semibold hover:text-purple-400 transition-colors"
+              to="/messy-react"
+              className="text-white font-semibold hover:text-purple-400 transition-colors uppercase"
             >
-              CONTACT
+              Messy React
+            </Link>
+            <Link
+              to="/architecture"
+              className="text-white font-semibold hover:text-purple-400 transition-colors uppercase"
+            >
+              Crud & Architecture
             </Link>
           </div>
 
           {/* Join Us Button */}
-          <button className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-2 rounded-lg hover:opacity-90 transition-opacity">
+          {/* <button className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-2 rounded-lg hover:opacity-90 transition-opacity">
             JOIN US!
-          </button>
+          </button> */}
         </div>
       </nav>
 
