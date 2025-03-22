@@ -1,7 +1,7 @@
 
 Hello, I'm Hoa
 
-### How to run proeject
+### How to run project
 `Copy file env-test and rename it to .env`
 ### with backend, i will send MONGODB_URI with email
 ``We need 2 terminals to run the project
